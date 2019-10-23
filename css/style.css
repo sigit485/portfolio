@@ -1,0 +1,533 @@
+/*Navbar*/
+.navbar{
+	position: relative;
+	z-index: 1;
+}
+
+.navbar-brand{
+	font-family: Viga;
+	font-size: 32px;
+}
+
+/*Jumbotron*/
+.jumbotron{
+	background-image: url(../img/workspace.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 540px;
+	text-align: center;
+	position: relative;
+}
+
+.jumbotron .container{
+	z-index: 1;
+	position: relative;
+}
+
+.jumbotron::after{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 80%;
+	background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+	position: absolute;
+	bottom: 0;
+}
+
+.jumbotron .display-4{
+	color: white;
+	margin-top: 150px;
+	font-weight: 200;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+	font-size: 40px; 
+	margin-bottom: 30px;
+}
+
+.jumbotron .display-4 span{
+	font-weight: 500;
+}
+
+/*Jumbotron About*/
+.about{
+	position: relative;
+}
+
+.aboutme h1{
+	text-align: center;
+}
+
+.aboutme p{
+	text-align: center;
+	margin-left: -15px;
+	margin-right: 25px;
+}
+
+/*Recent Projects*/
+/* ==========================================================================Portfolio========================================================================== */
+img.grayscale {
+	filter:url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+	/* Firefox 3.5+,IE10 */ filter:gray;
+	/* IE6-9 */ -webkit-filter:grayscale(100%);
+	/* Chrome 19+& Safari 6+*/ -webkit-transition:all .6s ease;
+	/* Fade to color for Chrome and Safari */ -webkit-backface-visibility:hidden;
+	/* Fix for transition flickering */
+}
+img.grayscale:hover {
+	filter:none;
+	-webkit-filter:grayscale(0%);
+}
+.row-offset-0 {
+	margin-left:0;
+	margin-right:0;
+}
+.row-offset-0>* {
+	padding-left:0;
+	padding-right:0;
+}
+.effects {
+	padding-left:70px;
+}
+.effects .img {
+	position:relative;
+	position:relative;
+	z-index:1;
+	overflow:hidden;
+}
+.effects .img:nth-child(n) {
+	margin-right:5px;
+}
+.effects .img:first-child {
+	margin-left:-15px;
+}
+.effects .img:last-child {
+	margin-right:0;
+}
+.effects .img img {
+	display:block;
+	margin:0;
+	padding:0;
+	height:auto;
+}
+.overlay {
+	display:block;
+	position:absolute;
+	z-index:20;
+	filter:none!important;
+	-webkit-filter:grayscale(0%);
+	overflow:hidden;
+	transition:all 0.5s;
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-o-transition:all 0.5s;
+}
+.overlay-effect .img i {
+	font-size:30px;
+}
+.overlay-effect .overlay {
+	bottom:0;
+	left:0;
+	right:0;
+	width:100%;
+	height:100%;
+	opacity:0;
+}
+.overlay-effect .overlay a.expand {
+	left:0;
+	right:0;
+	bottom:47%;
+	margin:0 auto -30px auto;
+}
+.overlay-effect .img.hover .overlay {
+	height:100%;
+	opacity:1;
+}
+.img img {
+	width:-webkit-calc(100%+40px) !important;
+	width:calc(100%+40px) !important;
+	-webkit-transition:opacity 0.35s,-webkit-transform 0.35s;
+	transition:opacity 0.35s,transform 0.35s;
+	-moz-transition:opacity 0.35s,-moz-transform 0.35s;
+	-o-transition:opacity 0.35s,-o-transform 0.35s;
+	-webkit-transform:translate3d(-40px,0,0);
+	transform:translate3d(-40px,0,0);
+	-ms-transform:translate3d(-40px,0,0);
+}
+.img:hover img {
+	-webkit-transform:translate3d(0,0,0);
+	transform:translate3d(0,0,0);
+	-ms-transform:translate3d(-40px,0,0);
+}
+
+.myproject p{
+	margin-bottom: 50px;
+}
+
+/*testimonial*/
+.testimonial{
+	margin-top: 100px;
+}
+
+.testimonial h5{
+	text-align: center;
+	font-weight: 200;
+	font-style: italic;
+	font-size: 24px;
+}
+
+.testimonial figure img{
+	width: 60px;
+	margin: 20px 10px 10px;
+	opacity: 0.6;
+}
+
+.testimonial figure img.utama{
+	width: 90px;
+	opacity: 1;
+	margin-top: 5px;
+}
+
+.testimonial figure h5{
+	font-size: 16px;
+	font-weight: bold;
+	font-style: normal;
+	color: #1C2C5D;
+}
+
+.testimonial figure p{
+	font-size: 12px;
+	color: #ACACAC;
+	margin-top: -5px !important;
+}
+
+.testimonial figcaption{
+	text-align: center;
+}
+
+/*Footer*/
+.footer{
+	margin-top: 100px;
+}
+
+.footer p{
+	color: #ACACAC;
+	font-size: 18px;
+}
+
+/*Utility*/
+.tombol{
+	text-transform: uppercase;
+	border-radius: 40px;
+}
+
+/*Info panel*/
+.info-panel{
+	box-shadow: 0 3px 20px rgba(0,0,0,0.5);
+	border-radius: 12px;
+	margin-top: -100px;
+	background-color: white;
+	padding: 30px;
+}
+
+.info-panel img{
+	width: 80px;
+	height: 80px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.info-panel h4{
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-top: 5px;
+}
+
+.info-panel p{
+	font-size: 14px;
+	color: #ACACAC;
+	margin-top: -5px;
+	font-weight: 200;
+}
+
+/*Workingspace*/
+.workingspace{
+	margin-top: 110px;
+	text-align: center;
+}
+
+.workingspace h3{
+	font-size: 52px;
+	font-weight: 200;
+	text-transform: uppercase;
+	margin-top: 15px;
+}
+
+.workingspace h3 span{
+	font-weight: 500;
+}
+
+.workingspace p{
+	font-size: 15px;
+	color: #ACACAC;
+	font-weight: 200;
+	margin: 30px 0;
+}
+
+.workingspace .profile1 h5{
+	color: #1C2C5D;
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 15px;
+}
+
+.workingspace .profile h5{
+	color: black;
+	margin-top: -20px;
+}
+
+.email{
+	margin-top: -10px;
+}
+
+.workingspace .profile .img-nama,.img-email{
+	position: absolute;
+	width: 8%;
+	margin-top: -37px;
+	margin-left: -17px;
+}
+
+.workingspace .profile .nama{
+	margin-top: 50px;
+}
+
+.workingspace .emailteks p{
+	margin-top: 40px;
+}
+
+/*About*/
+.about {
+	height:300px;
+	margin-top: 100px;
+	color: white;
+	text-align: center;
+}
+
+.color-bg{
+	background: #1A2D68;
+}
+
+.aboutme{
+	margin-left: 50px;
+}
+
+.aboutme p{
+	margin-top: 40px;
+}
+
+.aboutme h1{
+	margin-left: -40px;
+	margin-top: 20px;
+	text-transform: uppercase;
+}
+ 
+
+/* Footer */
+
+.footer {
+	padding-bottom: 15px;
+	background-image: url(../img/footer.png);
+	background-repeat: repeat-x;
+	background-position: bottom;
+  }
+  
+  #message {
+	height: 110px;
+	resize: none;
+  }
+
+  .contact-info.bottom {
+	margin-top: -25px;
+	margin-bottom: 120px;
+	font-size: 16px;
+	margin-left: -50px;
+  }
+
+  .contact-info.bottom h1{
+	font-size: 20px;
+	font-family: Domine;
+	margin-left: 70px;
+  }
+
+  .contact-info.bottom h1 span{
+	font-size: 20px;
+	font-family: Roboto;
+  }
+
+  .contact-info.bottom h5{
+	font-size: 18px;
+	font-family: Roboto;
+	line-height: 1.6;
+	margin-bottom: 25px;
+	margin-left: 70px;
+  }
+
+  .experience h2{
+	  margin-bottom: -50px;
+  }
+
+  /* Copyright */
+  
+  .copyright-text{
+	margin-top: 70px;
+	color: #fff;
+	font-size: 16px;  
+	padding-bottom: 15px;
+  }
+  
+  .copyright-text p {
+	margin-bottom: 0;
+	color: #ffffff;
+  }
+  
+  .experience {
+	padding-left: 20px;
+	margin-top: -35px;
+	margin-bottom: 120px;
+	font-family: Domine;
+  }
+
+  .experience h2{
+	font-size: 36px; 
+	text-align: center;
+  }
+
+  /* Copyright */
+/* End Footer */
+
+/*Desktop Version*/
+@media (min-width: 992px) { 
+	.navbar-brand, .nav-link{
+		color: white !important;
+		text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+	}
+
+	.nav-link{
+		text-transform: uppercase;
+		margin-right: 30px;
+	}
+
+	.nav-link:hover::after{
+		content: '';
+		display: block;
+		border-bottom: 3px solid #0B63DC;
+		width: 50%;
+		margin: auto;
+		padding-bottom: 5px;
+		margin-bottom: -8px;
+	}
+
+	.jumbotron{
+		margin-top: -75px;
+		height: 640px;
+	}
+
+	.jumbotron .display-4{
+		font-size: 62px; 
+	}
+
+	.workingspace{
+		text-align: left;
+	}
+
+	.workingspace .profile .img-nama,.img-email{
+		width: 13%;
+		margin-top: -5px;
+		margin-left: 1px;
+	}
+
+	.workingspace .profile .nama {
+		margin-left: 70px;
+	}
+
+	.workingspace .profile .emailteks{
+		margin-left: 70px;
+		margin-top: 20px;
+	}
+
+	.testimonial h5{
+		font-size: 32px;
+	}
+
+	.about{
+		align-content: center;
+	}
+
+	.about .aboutme{
+		margin-top: 50px;
+	}
+
+	.contact-info.bottom {
+	margin-top: -25px;
+	margin-bottom: 120px;
+	font-size: 16px;
+	margin-left: -50px;
+  }
+
+  .contact-info.bottom h1{
+	font-size: 20px;
+	font-family: Domine;
+  }
+
+  .contact-info.bottom h1 span{
+	font-size: 20px;
+	font-family: Roboto;
+  }
+
+  .contact-info.bottom h5{
+	font-size: 18px;
+	font-family: Roboto;
+	line-height: 1.6;
+	margin-bottom: 25px;
+  }
+
+  .contact-info.bottom h5 span{
+	  font-weight: bold;
+	  font-family: Domine;
+  }
+  
+  .bottom > address {
+	line-height: 22px;
+	margin-bottom: 40px;
+  }
+
+  /* Copyright */
+  
+  .copyright-text{
+	margin-top: 70px;
+	color: #fff;
+	font-size: 16px;  
+	padding-bottom: 15px;
+  }
+  
+  .copyright-text p {
+	margin-bottom: 0;
+	color: #ffffff;
+  }
+  
+  .experience {
+	padding-left: 20px;
+	margin-top: -35px;
+	margin-bottom: 120px;
+	font-family: Domine;
+  }
+
+  .experience h2{
+	font-size: 36px; 
+	text-align: center;
+	margin-bottom: 50px;
+  }
+
+  /* Copyright */
+/* End Footer */
+
+}
